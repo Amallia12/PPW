@@ -1,0 +1,1279 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>IMPORT MODUL &#8212; Pencarian dan Penambangan Web</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '200411100025_Tugas4_PPW A';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="200411100025_Tugas5_PPW%20A.html" />
+    <link rel="prev" title="TUGAS 3" href="200411100025_Tugas3_PPW%20A.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Pencarian dan Penambangan Web - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Pencarian dan Penambangan Web - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="200411100025_Tugas%201%20dan%202_PPW%20A.html">TUGAS 1 CRAWLING PTA TRUNOJOYO</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="200411100025_Tugas3_PPW%20A.html">TUGAS 3</a></li>
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">IMPORT MODUL</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="200411100025_Tugas6_PPW%20A.html">Plot Graph</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/Amallia12/PPW.git/blob/gh-pages/_sources/200411100025_Tugas4_PPW A.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Amallia12/PPW.git" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Amallia12/PPW.git/issues/new?title=Issue%20on%20page%20%2F200411100025_Tugas4_PPW A.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/200411100025_Tugas4_PPW A.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>IMPORT MODUL</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">IMPORT MODUL</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-get-data">FUNGSI get_data</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-get-content">FUNGSI get_content</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#crawling-data">Crawling data</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#memanggil-data-hasil-crawling">Memanggil data hasil crawling</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <p>#CRAWLING DATA DARI WEB BERITA</p>
+<section id="import-modul">
+<h1>IMPORT MODUL<a class="headerlink" href="#import-modul" title="Permalink to this heading">#</a></h1>
+<p>Modul yang digunakan adalah kombinasi dari tiga modul yaitu import requests
+from bs4 import BeautifulSoup
+import pandas as pd, yang dapat digunakan untuk mengambil data dari sebuah situs web (menggunakan requests), kemudian mengekstrak informasi yang diinginkan dari HTMLnya (menggunakan BeautifulSoup), dan akhirnya menyimpan hasilnya dalam bentuk dataframe Pandas (menggunakan pd).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="fungsi-get-data">
+<h1>FUNGSI get_data<a class="headerlink" href="#fungsi-get-data" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_data</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">category</span><span class="p">):</span>
+  <span class="n">data_page</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">data_page</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+    <span class="n">data_berita</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">container</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data_page</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+    <span class="n">container_page</span> <span class="o">=</span> <span class="n">container</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;detail__body-text itp_bodycontent&#39;</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">container_page</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span>
+    <span class="n">judul_berita</span> <span class="o">=</span> <span class="n">container</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;detail__title&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="n">tanggal_berita</span> <span class="o">=</span> <span class="n">container</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;detail__date&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+    <span class="n">data_content</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+      <span class="k">if</span>  <span class="s1">&#39;ADVERTISEMENT&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">i</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="ow">and</span>  <span class="s1">&#39;SCROLL TO RESUME CONTENT&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">i</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="ow">and</span> <span class="n">i</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;detail__multiple&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">data_content</span> <span class="o">+=</span> <span class="n">i</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span>
+
+    <span class="n">data_berita</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">judul_berita</span><span class="p">)</span>
+    <span class="n">data_berita</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tanggal_berita</span><span class="p">)</span>
+    <span class="n">data_berita</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_content</span><span class="p">)</span>
+    <span class="n">data_berita</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">category</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">data_berita</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Tujuan dari fungsi ini adalah untuk mengikis data dari halaman web yang ditentukan oleh urlparameter. Berikut rincian kodenya:</p>
+<ol class="arabic simple">
+<li><p>data_page = requests.get(url): Ini mengirimkan permintaan HTTP GET ke URL yang ditentukan menggunakan requestsperpustakaan dan menyimpan respons dalam data_pagevariabel.</p></li>
+<li><p>print(url): Mencetak URL ke konsol.</p></li>
+<li><p>if data_page.status_code == 200:: Memeriksa apakah kode status respons HTTP adalah 200 (OK), yang menunjukkan permintaan berhasil.</p></li>
+<li><p>Di dalam blok bersyarat:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Ini menginisialisasi daftar kosong yang disebut data_berita.</p></li>
+<li><p>Ia menggunakan BeautifulSoup untuk mengurai konten HTML halaman web (data_page.content).</p></li>
+<li><p>Ia menemukan wadah konten berita menggunakan container.find(‘div’, class_=’detail__body-text itp_bodycontent’).</p></li>
+<li><p>Ini mengekstrak judul berita ( judul_berita) dan tanggal publikasi ( tanggal_berita).</p></li>
+<li><p>Ini menginisialisasi string kosong yang disebut data_content.
+Itu mengulangi semua paragraf (p) dalam wadah dan menambahkan teksnya data_contentjika tidak mengandung kata kunci tertentu seperti ‘IKLAN’ dan ‘GULIR UNTUK MERESUMKAN KONTEN’. Selain itu, ia melewatkan paragraf yang berisi kelas tertentu (‘detail__multiple’).</p></li>
+<li><p>Itu menambahkan judul, tanggal, konten, dan kategori ke daftar data_berita.</p></li>
+</ul>
+<ol class="arabic simple" start="5">
+<li><p>Terakhir, ia mengembalikan data_beritadaftar yang berisi informasi yang diekstraksi.</p></li>
+</ol>
+</section>
+<section id="fungsi-get-content">
+<h1>FUNGSI get_content<a class="headerlink" href="#fungsi-get-content" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_content</span> <span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">category</span><span class="p">):</span>
+  <span class="n">menu_page</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">menu_page</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+    <span class="n">content</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">menu_page</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+    <span class="n">content_page</span> <span class="o">=</span> <span class="n">content</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;grid-row list-content&#39;</span><span class="p">)</span>
+    <span class="n">container_content</span> <span class="o">=</span> <span class="n">content_page</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;media media--left media--image-radius block-link&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Untuk menyimpan url content</span>
+    <span class="n">data_content</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">container_content</span><span class="p">:</span>
+      <span class="n">link_content</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;media__link&#39;</span><span class="p">)</span>
+      <span class="n">subtitle</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;h2&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;media__subtitle&#39;</span><span class="p">)</span>
+      <span class="k">if</span> <span class="n">subtitle</span> <span class="o">==</span> <span class="kc">None</span> <span class="ow">and</span> <span class="s1">&#39;20.detik&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">link_content</span><span class="p">)</span> <span class="ow">and</span> <span class="s1">&#39;intermeso&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">link_content</span><span class="p">)</span> <span class="ow">and</span> <span class="s1">&#39;foto&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">link_content</span><span class="p">):</span>
+        <span class="n">data_berita</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="n">link_content</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">),</span> <span class="n">category</span><span class="p">)</span>
+        <span class="n">data_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_berita</span><span class="p">)</span>
+
+    <span class="n">next_page</span> <span class="o">=</span> <span class="n">content</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;pagination__item&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">next_page</span><span class="p">:</span>
+      <span class="k">if</span> <span class="s1">&#39;Next&#39;</span> <span class="o">==</span> <span class="n">i</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">():</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">data_content</span><span class="p">,</span> <span class="n">i</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Digunakan untuk mengekstrak konten dari URL tertentu yang terkait dengan artikel berita.</p>
+<ul class="simple">
+<li><p>Ini mengirimkan permintaan HTTP GET ke yang ditentukan urlmenggunakan requestsperpustakaan.</p></li>
+<li><p>Memeriksa apakah kode status respons adalah 200 (menunjukkan permintaan berhasil).</p></li>
+<li><p>Jika permintaan berhasil, permintaan tersebut akan digunakan BeautifulSoupuntuk mengurai konten HTML halaman.</p></li>
+<li><p>Menemukan elemen div tertentu dengan kelas ‘konten daftar baris kisi’ yang kemungkinan berisi konten utama.</p></li>
+<li><p>Mengekstrak daftar sub-elemen dengan kelas ‘media media–media kiri–tautan blok radius gambar’ di dalam konten utama.</p></li>
+<li><p>Ulangi sub-elemen ini dan ekstrak informasi seperti tautan ke konten dan subjudul.</p></li>
+<li><p>Memeriksa kondisi terkait subtitle dan konten tautan untuk menyaring item yang tidak diinginkan.</p></li>
+<li><p>Memanggil get_datafungsi (yang tidak disediakan) untuk mendapatkan data tambahan berdasarkan tautan dan kategori yang diekstraksi.</p></li>
+<li><p>Menambahkan data yang diperoleh ke daftar bernama data_content.</p></li>
+<li><p>Mencari link penomoran halaman dengan kelas ‘pagination__item’ untuk memeriksa apakah ada halaman “Berikutnya”.</p></li>
+<li><p>Jika halaman “Berikutnya” ditemukan, fungsi akan mengembalikan tupel yang berisi daftar data_contentdan URL halaman berikutnya.</p></li>
+</ul>
+<p>##Fungsi scraping_detik_news</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">scraping_detik_news</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;https://news.detik.com/indeks&#39;</span><span class="p">,</span> <span class="n">num_content</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Finance&#39;</span><span class="p">,</span><span class="s1">&#39;Sport&#39;</span><span class="p">]):</span>
+  <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+
+  <span class="c1"># Untuk mengecek respon url dan mencari menu sidebar</span>
+  <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+    <span class="n">html</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">content</span>
+    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+    <span class="n">menu</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;nav&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;static-nav&#39;</span><span class="p">)</span>
+    <span class="n">link_menu</span> <span class="o">=</span> <span class="n">menu</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+    <span class="c1"># Untuk menyimpan url navbar</span>
+    <span class="n">save_link_navbar</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">link</span> <span class="ow">in</span> <span class="n">link_menu</span><span class="p">:</span>
+      <span class="k">if</span> <span class="s1">&#39;travel&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">link</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="s1">&#39;wolipop&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">link</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">):</span>
+        <span class="n">save_link_navbar</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">link</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">link</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">)])</span>
+
+    <span class="c1"># Untuk mengecek respon url dan mencari link content</span>
+    <span class="n">data_semua_berita</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">nav</span> <span class="ow">in</span> <span class="n">save_link_navbar</span><span class="p">:</span>
+      <span class="k">if</span> <span class="n">nav</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">in</span> <span class="n">category</span><span class="p">:</span>
+        <span class="n">data_berita</span><span class="p">,</span> <span class="n">next_page</span> <span class="o">=</span> <span class="n">get_content</span><span class="p">(</span><span class="n">nav</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">nav</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">data_semua_berita</span> <span class="o">+=</span> <span class="n">data_berita</span>
+
+
+        <span class="n">next_page_more</span> <span class="o">=</span> <span class="n">next_page</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_content</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+          <span class="n">more_content</span><span class="p">,</span> <span class="n">next_page_more</span> <span class="o">=</span> <span class="n">get_content</span><span class="p">(</span><span class="n">next_page_more</span><span class="p">,</span> <span class="n">nav</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+          <span class="n">data_semua_berita</span> <span class="o">+=</span> <span class="n">more_content</span>
+
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data_semua_berita</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Judul&#39;</span><span class="p">,</span> <span class="s1">&#39;Tanggal&#39;</span><span class="p">,</span> <span class="s1">&#39;Artikel&#39;</span><span class="p">,</span> <span class="s1">&#39;Category&#39;</span><span class="p">])</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;Data Berita Detik.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Data Berhasil Di Simpan dengan Jumlah </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">data_semua_berita</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Kode yang diberikan mendefinisikan fungsi scraping_detik_newsyang mengambil data berita dari situs <a class="reference external" href="http://newa.detik.com">newa.detik.com</a> dan menyimpannya ke file CSV. Berikut rincian fungsionalitas fungsi tersebut:</p>
+<ol class="arabic simple">
+<li><p>Mengambil Beranda <a class="reference external" href="http://news.detik.com">news.detik.com</a>:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Fungsi ini mengambil tiga parameter: url, num_content, dan category. urlmenentukan URL beranda <a class="reference external" href="http://Detik.com">Detik.com</a>, num_contentmenunjukkan jumlah artikel berita yang akan dikikis, dan categorymerupakan daftar kategori untuk memfilter artikel berita.</p></li>
+<li><p>Fungsi mengirimkan permintaan GET ke yang ditentukan urlmenggunakan requestsperpustakaan. Jika permintaan berhasil ( response.status_code == 200), konten HTML diambil menggunakan response.content.</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Mengurai Konten HTML:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Konten HTML diurai menggunakan BeautifulSoup menjadi objek sup. Objek sup mewakili struktur HTML halaman web yang diurai.</p></li>
+<li><p>Fungsinya mencari menu navigasi menggunakan find()metode dengan kelas CSS ‘static-nav’. Menu navigasi berisi link ke berbagai kategori berita.</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>Mengekstrak Tautan Navbar:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Fungsi ini mengulangi tautan yang ditemukan di menu navigasi dan mengekstrak teks tautan dan URL masing-masing menggunakan link.find(‘div’).text.strip()dan link.get(‘href’).</p></li>
+<li><p>Informasi tautan yang diekstraksi disimpan dalam daftar bernama save_link_navbar.</p></li>
+</ul>
+<ol class="arabic simple" start="4">
+<li><p>Mengikis Artikel Berita:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Fungsi ini mengulangi tautan navbar yang diekstraksi dan memfilternya berdasarkan category.</p></li>
+<li><p>Untuk setiap kategori yang dipilih, fungsi ini memanggil get_content()artikel berita untuk kategori tersebut. get_content()mengembalikan daftar artikel berita dan URL halaman berikutnya.</p></li>
+<li><p>Artikel berita yang diambil akan ditambahkan ke data_semua_beritadaftar.</p></li>
+</ul>
+<ol class="arabic simple" start="5">
+<li><p>Menggores Halaman Berikutnya:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Fungsi ini mengekstrak URL halaman berikutnya dari variabel next_page.</p></li>
+<li><p>Ini mengulangi num_content-1waktu, memanggil get_content()untuk mengambil artikel berita dari halaman berikutnya dan menambahkannya ke daftar data_semua_berita.</p></li>
+</ul>
+<ol class="arabic simple" start="6">
+<li><p>Menyimpan Data yang Tergores:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Fungsi ini mengubah data berita yang diambil menjadi Pandas DataFrame.</p></li>
+<li><p>DataFrame disimpan ke file CSV bernama Data Berita Detik.csv.</p></li>
+<li><p>Sebuah pesan dicetak yang menunjukkan keberhasilan penyimpanan data dengan jumlah artikel yang tergores.</p></li>
+</ul>
+<p>Singkatnya, kode ini secara efektif mengambil artikel berita dari <a class="reference external" href="http://Detik.com">Detik.com</a> berdasarkan kategori tertentu dan menyimpan data yang diambil ke file CSV.</p>
+</section>
+<section id="crawling-data">
+<h1>Crawling data<a class="headerlink" href="#crawling-data" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scraping_detik_news</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;https://news.detik.com/indeks&#39;</span><span class="p">,</span> <span class="n">num_content</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Finance&#39;</span><span class="p">,</span><span class="s1">&#39;Sport&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://finance.detik.com/infrastruktur/d-7076279/progres-capai-98-bendungan-ameroro-mulai-pengisian-awal
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://finance.detik.com/berita-ekonomi-bisnis/d-7076188/amankan-stok-nataru-ri-impor-beras-dari-thailand
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://finance.detik.com/berita-ekonomi-bisnis/d-7076140/kkp-beberkan-alasan-penangkapan-ikan-terukur-ditunda
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://finance.detik.com/infrastruktur/d-7076135/bandara-tertua-di-riau-siap-layani-penerbangan-perintis-penumpang-kargo
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://finance.detik.com/bursa-dan-valas/d-7076080/uob-indonesia-raup-rp1-5-t-dari-rights-issue-ini-rencana-bisnisnya
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://finance.detik.com/berita-ekonomi-bisnis/d-7076077/lewat-btn-fund-bank-btn-siap-suntik-dana-ke-startup-properti-di-ri
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://finance.detik.com/energi/d-7076071/pln-acwa-power-kerja-sama-kembangkan-2-plts-di-indonesia
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://finance.detik.com/infrastruktur/d-7076070/bukan-kurir-teriak-paket-kirim-barang-di-ikn-bakal-pakai-drone
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://finance.detik.com/berita-ekonomi-bisnis/d-7075931/masuk-daftar-wanita-paling-berpengaruh-di-dunia-bos-pertamina-saya-bersyukur
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://finance.detik.com/berita-ekonomi-bisnis/d-7075895/butuh-tenaga-kerja-digital-600-ribu-tahun-ri-gaet-apple-hingga-amazon
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://finance.detik.com/infrastruktur/d-7075831/sistem-bayar-tol-tanpa-setop-dikritik-andre-rosiade-pupr-bilang-begini
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://finance.detik.com/berita-ekonomi-bisnis/d-7075828/jangan-lupa-ke-transmart-ada-diskon-20-tiap-hari-cek-nih-produknya
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://finance.detik.com/berita-ekonomi-bisnis/d-7075757/mendag-zulhas-siap-dukung-kemajuan-usaha-perempuan-ri-ini-langkahnya
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-5-d76b421b86b1&gt;</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">scraping_detik_news</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;https://news.detik.com/indeks&#39;</span><span class="p">,</span> <span class="n">num_content</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Finance&#39;</span><span class="p">,</span><span class="s1">&#39;Sport&#39;</span><span class="p">])</span>
+
+<span class="nn">&lt;ipython-input-4-0bddba450ca9&gt;</span> in <span class="ni">scraping_detik_news</span><span class="nt">(url, num_content, category)</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span>         <span class="n">next_page_more</span> <span class="o">=</span> <span class="n">next_page</span>
+<span class="g g-Whitespace">     </span><span class="mi">25</span>         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_content</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+<span class="ne">---&gt; </span><span class="mi">26</span>           <span class="n">more_content</span><span class="p">,</span> <span class="n">next_page_more</span> <span class="o">=</span> <span class="n">get_content</span><span class="p">(</span><span class="n">next_page_more</span><span class="p">,</span> <span class="n">nav</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="g g-Whitespace">     </span><span class="mi">27</span>           <span class="n">data_semua_berita</span> <span class="o">+=</span> <span class="n">more_content</span>
+<span class="g g-Whitespace">     </span><span class="mi">28</span> 
+
+<span class="nn">&lt;ipython-input-3-6332406b2823&gt;</span> in <span class="ni">get_content</span><span class="nt">(url, category)</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span>       <span class="n">subtitle</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;h2&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;media__subtitle&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span>       <span class="k">if</span> <span class="n">subtitle</span> <span class="o">==</span> <span class="kc">None</span> <span class="ow">and</span> <span class="s1">&#39;20.detik&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">link_content</span><span class="p">)</span> <span class="ow">and</span> <span class="s1">&#39;intermeso&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">link_content</span><span class="p">)</span> <span class="ow">and</span> <span class="s1">&#39;foto&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">link_content</span><span class="p">):</span>
+<span class="ne">---&gt; </span><span class="mi">14</span>         <span class="n">data_berita</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="n">link_content</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">),</span> <span class="n">category</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span>         <span class="n">data_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_berita</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span> 
+
+<span class="nn">&lt;ipython-input-2-70b220c0da20&gt;</span> in <span class="ni">get_data</span><span class="nt">(url, category)</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="k">def</span> <span class="nf">get_data</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">category</span><span class="p">):</span>
+<span class="ne">----&gt; </span><span class="mi">2</span>   <span class="n">data_page</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span>   <span class="nb">print</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span>   <span class="k">if</span> <span class="n">data_page</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">data_berita</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/requests/api.py</span> in <span class="ni">get</span><span class="nt">(url, params, **kwargs)</span>
+<span class="g g-Whitespace">     </span><span class="mi">71</span>     <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">72</span><span class="s2"> </span>
+<span class="ne">---&gt; </span><span class="mi">73</span><span class="s2">     return request(&quot;get&quot;, url, params=params, **kwargs)</span>
+<span class="g g-Whitespace">     </span><span class="mi">74</span><span class="s2"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">75</span><span class="s2"> </span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/requests/api.py</span> in <span class="ni">request</span><span class="nt">(method, url, **kwargs)</span>
+<span class="g g-Whitespace">     </span><span class="mi">57</span><span class="s2">     # cases, and look like a memory leak in others.</span>
+<span class="g g-Whitespace">     </span><span class="mi">58</span><span class="s2">     with sessions.Session() as session:</span>
+<span class="ne">---&gt; </span><span class="mi">59</span><span class="s2">         return session.request(method=method, url=url, **kwargs)</span>
+<span class="g g-Whitespace">     </span><span class="mi">60</span><span class="s2"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">61</span><span class="s2"> </span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/requests/sessions.py</span> in <span class="ni">request</span><span class="nt">(self, method, url, params, data, headers, cookies, files, auth, timeout, allow_redirects, proxies, hooks, stream, verify, cert, json)</span>
+<span class="g g-Whitespace">    </span><span class="mi">587</span><span class="s2">         }</span>
+<span class="g g-Whitespace">    </span><span class="mi">588</span><span class="s2">         send_kwargs.update(settings)</span>
+<span class="ne">--&gt; </span><span class="mi">589</span><span class="s2">         resp = self.send(prep, **send_kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">590</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">591</span><span class="s2">         return resp</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/requests/sessions.py</span> in <span class="ni">send</span><span class="nt">(self, request, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">701</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">702</span><span class="s2">         # Send the request</span>
+<span class="ne">--&gt; </span><span class="mi">703</span><span class="s2">         r = adapter.send(request, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">704</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">705</span><span class="s2">         # Total elapsed time of the request (approximately)</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/requests/adapters.py</span> in <span class="ni">send</span><span class="nt">(self, request, stream, timeout, verify, cert, proxies)</span>
+<span class="g g-Whitespace">    </span><span class="mi">484</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">485</span><span class="s2">         try:</span>
+<span class="ne">--&gt; </span><span class="mi">486</span><span class="s2">             resp = conn.urlopen(</span>
+<span class="g g-Whitespace">    </span><span class="mi">487</span><span class="s2">                 method=request.method,</span>
+<span class="g g-Whitespace">    </span><span class="mi">488</span><span class="s2">                 url=url,</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py</span> in <span class="ni">urlopen</span><span class="nt">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, preload_content, decode_content, **response_kw)</span>
+<span class="g g-Whitespace">    </span><span class="mi">789</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">790</span><span class="s2">             # Make the request on the HTTPConnection object</span>
+<span class="ne">--&gt; </span><span class="mi">791</span><span class="s2">             response = self._make_request(</span>
+<span class="g g-Whitespace">    </span><span class="mi">792</span><span class="s2">                 conn,</span>
+<span class="g g-Whitespace">    </span><span class="mi">793</span><span class="s2">                 method,</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py</span> in <span class="ni">_make_request</span><span class="nt">(self, conn, method, url, body, headers, retries, timeout, chunked, response_conn, preload_content, decode_content, enforce_content_length)</span>
+<span class="g g-Whitespace">    </span><span class="mi">535</span><span class="s2">         # Receive the response from the server</span>
+<span class="g g-Whitespace">    </span><span class="mi">536</span><span class="s2">         try:</span>
+<span class="ne">--&gt; </span><span class="mi">537</span><span class="s2">             response = conn.getresponse()</span>
+<span class="g g-Whitespace">    </span><span class="mi">538</span><span class="s2">         except (BaseSSLError, OSError) as e:</span>
+<span class="g g-Whitespace">    </span><span class="mi">539</span><span class="s2">             self._raise_timeout(err=e, url=url, timeout_value=read_timeout)</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/connection.py</span> in <span class="ni">getresponse</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">459</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">460</span><span class="s2">         # Get the response from http.client.HTTPConnection</span>
+<span class="ne">--&gt; </span><span class="mi">461</span><span class="s2">         httplib_response = super().getresponse()</span>
+<span class="g g-Whitespace">    </span><span class="mi">462</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">463</span><span class="s2">         try:</span>
+
+<span class="nn">/usr/lib/python3.10/http/client.py</span> in <span class="ni">getresponse</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1373</span><span class="s2">         try:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1374</span><span class="s2">             try:</span>
+<span class="ne">-&gt; </span><span class="mi">1375</span><span class="s2">                 response.begin()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1376</span><span class="s2">             except ConnectionError:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1377</span><span class="s2">                 self.close()</span>
+
+<span class="nn">/usr/lib/python3.10/http/client.py</span> in <span class="ni">begin</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">316</span><span class="s2">         # read until we get a non-100 response</span>
+<span class="g g-Whitespace">    </span><span class="mi">317</span><span class="s2">         while True:</span>
+<span class="ne">--&gt; </span><span class="mi">318</span><span class="s2">             version, status, reason = self._read_status()</span>
+<span class="g g-Whitespace">    </span><span class="mi">319</span><span class="s2">             if status != CONTINUE:</span>
+<span class="g g-Whitespace">    </span><span class="mi">320</span><span class="s2">                 break</span>
+
+<span class="nn">/usr/lib/python3.10/http/client.py</span> in <span class="ni">_read_status</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">277</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">278</span><span class="s2">     def _read_status(self):</span>
+<span class="ne">--&gt; </span><span class="mi">279</span><span class="s2">         line = str(self.fp.readline(_MAXLINE + 1), &quot;iso-8859-1&quot;)</span>
+<span class="g g-Whitespace">    </span><span class="mi">280</span><span class="s2">         if len(line) &gt; _MAXLINE:</span>
+<span class="g g-Whitespace">    </span><span class="mi">281</span><span class="s2">             raise LineTooLong(&quot;status line&quot;)</span>
+
+<span class="nn">/usr/lib/python3.10/socket.py</span> in <span class="ni">readinto</span><span class="nt">(self, b)</span>
+<span class="g g-Whitespace">    </span><span class="mi">703</span><span class="s2">         while True:</span>
+<span class="g g-Whitespace">    </span><span class="mi">704</span><span class="s2">             try:</span>
+<span class="ne">--&gt; </span><span class="mi">705</span><span class="s2">                 return self._sock.recv_into(b)</span>
+<span class="g g-Whitespace">    </span><span class="mi">706</span><span class="s2">             except timeout:</span>
+<span class="g g-Whitespace">    </span><span class="mi">707</span><span class="s2">                 self._timeout_occurred = True</span>
+
+<span class="nn">/usr/lib/python3.10/ssl.py</span> in <span class="ni">recv_into</span><span class="nt">(self, buffer, nbytes, flags)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1301</span><span class="s2">                   &quot;non-zero flags not allowed in calls to recv_into() on </span><span class="si">%s</span><span class="s2">&quot; %</span>
+<span class="g g-Whitespace">   </span><span class="mi">1302</span><span class="s2">                   self.__class__)</span>
+<span class="ne">-&gt; </span><span class="mi">1303</span><span class="s2">             return self.read(nbytes, buffer)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1304</span><span class="s2">         else:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1305</span><span class="s2">             return super().recv_into(buffer, nbytes, flags)</span>
+
+<span class="nn">/usr/lib/python3.10/ssl.py</span> in <span class="ni">read</span><span class="nt">(self, len, buffer)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1157</span><span class="s2">         try:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1158</span><span class="s2">             if buffer is not None:</span>
+<span class="ne">-&gt; </span><span class="mi">1159</span><span class="s2">                 return self._sslobj.read(len, buffer)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1160</span><span class="s2">             else:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1161</span><span class="s2">                 return self._sslobj.read(len)</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
+</pre></div>
+</div>
+</div>
+</div>
+<p>Fungsi dari kode scraping_detik_news() adalah untuk mengambil data berita dari situs <a class="reference external" href="http://news.Detik.com">news.Detik.com</a> berdasarkan kategori yang ditentukan. Data berita yang diambil meliputi judul, tanggal, isi berita, dan kategori. Data berita kemudian disimpan ke dalam file CSV dengan nama Data Berita Detik.csv.</p>
+</section>
+<section id="memanggil-data-hasil-crawling">
+<h1>Memanggil data hasil crawling<a class="headerlink" href="#memanggil-data-hasil-crawling" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/content/drive/MyDrive/PPW/TUGAS/Data Berita newsdetik.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-f699b09f-86cd-4952-a8d9-958a47ef13e3" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Judul</th>
+      <th>Tanggal</th>
+      <th>Artikel</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Gus Imin Janjikan Khitan Ditanggung JKN, BPJS ...</td>
+      <td>Senin, 27 Nov 2023 13:44 WIB</td>
+      <td>Cawapres nomor urut 1 Muhaimin Iskandar atau G...</td>
+      <td>Finance</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Kementerian BUMN Punya Solusi Selamatkan Waski...</td>
+      <td>Senin, 27 Nov 2023 13:43 WIB</td>
+      <td>Saham PT Waskita Karya (Persero) Tbk terancam ...</td>
+      <td>Finance</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Sedot Sepertiga Uang Negara, Pemda Diminta Mel...</td>
+      <td>Senin, 27 Nov 2023 13:33 WIB</td>
+      <td>Menteri Keuangan, Sri Mulyani Indrawati, menje...</td>
+      <td>Finance</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Pertagas Raih Gold Rating di Ajang Asia Sustai...</td>
+      <td>Senin, 27 Nov 2023 13:31 WIB</td>
+      <td>PT Pertamina Gas (Pertagas) yang merupakan bag...</td>
+      <td>Finance</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Petani Tembakau Jabar Ramai-ramai Tolak Aturan...</td>
+      <td>Senin, 27 Nov 2023 13:28 WIB</td>
+      <td>Ratusan petani dan komunitas pertembakauan di ...</td>
+      <td>Finance</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1617</th>
+      <td>Seandainya Ada Team Order dari Ducati, Jorge M...</td>
+      <td>Senin, 09 Okt 2023 20:10 WIB</td>
+      <td>Persaingan ketat di antara Francesco Bagnaia d...</td>
+      <td>Sport</td>
+    </tr>
+    <tr>
+      <th>1618</th>
+      <td>Yamaha Mau VR46 Racing Jadi Tim Satelit, tapi...</td>
+      <td>Senin, 09 Okt 2023 19:30 WIB</td>
+      <td>Yamaha ingin mempunyai tim satelit lagi musim ...</td>
+      <td>Sport</td>
+    </tr>
+    <tr>
+      <th>1619</th>
+      <td>Tim Kempo Indonesia Sabet 4 Emas di Kejuaraan ...</td>
+      <td>Senin, 09 Okt 2023 18:50 WIB</td>
+      <td>Tim Kempo Indonesia bersinar di Negeri Sakura ...</td>
+      <td>Sport</td>
+    </tr>
+    <tr>
+      <th>1620</th>
+      <td>Jadwal MotoGP Mandalika Akhir Pekan Ini</td>
+      <td>Senin, 09 Okt 2023 18:15 WIB</td>
+      <td>Jadwal MotoGP Mandalika akhir pekan ini bisa d...</td>
+      <td>Sport</td>
+    </tr>
+    <tr>
+      <th>1621</th>
+      <td>Jelang BTN Jakarta Run, Bank BTN Gelar 42K Dre...</td>
+      <td>Senin, 09 Okt 2023 18:02 WIB</td>
+      <td>Bank Tabungan Negara (BTN) menggelar acara 42K...</td>
+      <td>Sport</td>
+    </tr>
+  </tbody>
+</table>
+<p>1622 rows × 4 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-f699b09f-86cd-4952-a8d9-958a47ef13e3')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-f699b09f-86cd-4952-a8d9-958a47ef13e3 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-f699b09f-86cd-4952-a8d9-958a47ef13e3');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-bd3a2eef-6e05-490c-98a8-dde3c40a4171">
+  <button class="colab-df-quickchart" onclick="quickchart('df-bd3a2eef-6e05-490c-98a8-dde3c40a4171')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-bd3a2eef-6e05-490c-98a8-dde3c40a4171 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1622, 4)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Judul       0
+Tanggal     0
+Artikel     0
+Category    0
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="200411100025_Tugas3_PPW%20A.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">TUGAS 3</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="200411100025_Tugas5_PPW%20A.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">IMPORT MODUL</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-get-data">FUNGSI get_data</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-get-content">FUNGSI get_content</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#crawling-data">Crawling data</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#memanggil-data-hasil-crawling">Memanggil data hasil crawling</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 20-025 Amallia Tiara Putri
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
