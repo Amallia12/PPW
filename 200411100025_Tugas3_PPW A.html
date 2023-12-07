@@ -175,6 +175,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="200411100025_Tugas4_PPW%20A.html"><strong>CRAWLING DATA DARI WEB BERITA</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="200411100025_Tugas5_PPW%20A.html"><strong>COSINUS SIMILARITY</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="200411100025_Tugas6_PPW%20A.html"><strong>Ringkasan Berita</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="200411100025_Tugas7.html"><strong>EKSTRAKSI KATA (PAGE RANK)</strong></a></li>
 </ul>
 
     </div>
@@ -449,7 +450,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-06c7735a-8e7b-4367-90c1-5e16510bf8e2" class="colab-df-container">
+  <div id="df-1400de49-1df4-4294-a555-9e25c0b8d24e" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -763,7 +764,7 @@ document.write(`
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-06c7735a-8e7b-4367-90c1-5e16510bf8e2')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-1400de49-1df4-4294-a555-9e25c0b8d24e')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -815,12 +816,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-06c7735a-8e7b-4367-90c1-5e16510bf8e2 button.colab-df-convert');
+        document.querySelector('#df-1400de49-1df4-4294-a555-9e25c0b8d24e button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-06c7735a-8e7b-4367-90c1-5e16510bf8e2');
+        const element = document.querySelector('#df-1400de49-1df4-4294-a555-9e25c0b8d24e');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -852,7 +853,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-24bba242-d73e-4720-b5db-f1dba64d2233" class="colab-df-container">
+  <div id="df-f89d2c87-e1c8-4cad-939d-f7e1b3f89da5" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1166,7 +1167,7 @@ document.write(`
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-24bba242-d73e-4720-b5db-f1dba64d2233')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-f89d2c87-e1c8-4cad-939d-f7e1b3f89da5')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -1218,12 +1219,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-24bba242-d73e-4720-b5db-f1dba64d2233 button.colab-df-convert');
+        document.querySelector('#df-f89d2c87-e1c8-4cad-939d-f7e1b3f89da5 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-24bba242-d73e-4720-b5db-f1dba64d2233');
+        const element = document.querySelector('#df-f89d2c87-e1c8-4cad-939d-f7e1b3f89da5');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1279,7 +1280,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-88b6e2a2-dd42-459d-a4f3-592c4d46667f" class="colab-df-container">
+  <div id="df-ea62fd50-28ec-4e61-afeb-f4303be70b55" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1311,12 +1312,12 @@ document.write(`
     <tr>
       <th>0</th>
       <td>sistem informasi akademik siakad sistem inform...</td>
-      <td>0.495093</td>
-      <td>0.414665</td>
       <td>0.001212</td>
-      <td>0.087817</td>
-      <td>0.001213</td>
-      <td>RPL</td>
+      <td>0.343867</td>
+      <td>0.001212</td>
+      <td>0.652496</td>
+      <td>0.001212</td>
+      <td>KOMPUTASI</td>
     </tr>
     <tr>
       <th>1</th>
@@ -1324,38 +1325,38 @@ document.write(`
       <td>0.000948</td>
       <td>0.000948</td>
       <td>0.000948</td>
-      <td>0.000948</td>
       <td>0.996208</td>
+      <td>0.000948</td>
       <td>RPL</td>
     </tr>
     <tr>
       <th>2</th>
       <td>web server perangkat lunak server berfungsi me...</td>
+      <td>0.000913</td>
+      <td>0.000913</td>
+      <td>0.471043</td>
+      <td>0.526217</td>
       <td>0.000914</td>
-      <td>0.000913</td>
-      <td>0.996346</td>
-      <td>0.000913</td>
-      <td>0.000913</td>
-      <td>RPL</td>
+      <td>KOMPUTASI</td>
     </tr>
     <tr>
       <th>3</th>
       <td>penjadwalan kuliah perguruan kompleks permasal...</td>
-      <td>0.994073</td>
       <td>0.001482</td>
+      <td>0.527094</td>
       <td>0.001482</td>
+      <td>0.468461</td>
       <td>0.001482</td>
-      <td>0.001482</td>
-      <td>RPL</td>
+      <td>KOMPUTASI</td>
     </tr>
     <tr>
       <th>4</th>
       <td>seiring perkembangan teknologi didunia muncul ...</td>
       <td>0.001198</td>
-      <td>0.026960</td>
-      <td>0.674018</td>
       <td>0.001198</td>
-      <td>0.296627</td>
+      <td>0.001198</td>
+      <td>0.435443</td>
+      <td>0.560964</td>
       <td>KOMPUTASI</td>
     </tr>
     <tr>
@@ -1371,30 +1372,30 @@ document.write(`
     <tr>
       <th>823</th>
       <td>kurangnya pemahaman gejala penyakit saluran pe...</td>
+      <td>0.178813</td>
       <td>0.000823</td>
+      <td>0.122829</td>
       <td>0.000823</td>
-      <td>0.000823</td>
-      <td>0.235527</td>
-      <td>0.762003</td>
-      <td>KOMPUTASI</td>
+      <td>0.696712</td>
+      <td>RPL</td>
     </tr>
     <tr>
       <th>824</th>
       <td>data set hilang utama studi bersifat substansi...</td>
-      <td>0.479937</td>
-      <td>0.001243</td>
-      <td>0.516335</td>
-      <td>0.001243</td>
       <td>0.001242</td>
-      <td>RPL</td>
+      <td>0.001242</td>
+      <td>0.001243</td>
+      <td>0.995030</td>
+      <td>0.001242</td>
+      <td>KOMPUTASI</td>
     </tr>
     <tr>
       <th>825</th>
       <td>proses seleksi penerimaan tenaga kerja faktor ...</td>
+      <td>0.094836</td>
       <td>0.000635</td>
-      <td>0.000635</td>
-      <td>0.000635</td>
-      <td>0.997460</td>
+      <td>0.571704</td>
+      <td>0.332190</td>
       <td>0.000635</td>
       <td>RPL</td>
     </tr>
@@ -1403,8 +1404,8 @@ document.write(`
       <td>sapi salah hewan ternak komoditi utama bahan p...</td>
       <td>0.000772</td>
       <td>0.000772</td>
-      <td>0.000772</td>
       <td>0.996911</td>
+      <td>0.000772</td>
       <td>0.000772</td>
       <td>RPL</td>
     </tr>
@@ -1413,8 +1414,8 @@ document.write(`
       <td>sistem temu informasi alternatif metode simila...</td>
       <td>0.001105</td>
       <td>0.001105</td>
-      <td>0.001105</td>
-      <td>0.995579</td>
+      <td>0.251667</td>
+      <td>0.745017</td>
       <td>0.001105</td>
       <td>RPL</td>
     </tr>
@@ -1425,7 +1426,7 @@ document.write(`
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-88b6e2a2-dd42-459d-a4f3-592c4d46667f')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-ea62fd50-28ec-4e61-afeb-f4303be70b55')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -1477,12 +1478,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-88b6e2a2-dd42-459d-a4f3-592c4d46667f button.colab-df-convert');
+        document.querySelector('#df-ea62fd50-28ec-4e61-afeb-f4303be70b55 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-88b6e2a2-dd42-459d-a4f3-592c4d46667f');
+        const element = document.querySelector('#df-ea62fd50-28ec-4e61-afeb-f4303be70b55');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1527,7 +1528,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-64c6e5c0-d0f5-4114-9959-438f9527e3a2" class="colab-df-container">
+  <div id="df-d4af888f-9cbb-4016-aa37-9fd0814bef9e" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1572,48 +1573,48 @@ document.write(`
   <tbody>
     <tr>
       <th>0</th>
-      <td>0.200000</td>
-      <td>2.192502</td>
-      <td>1.19962</td>
-      <td>0.200000</td>
-      <td>0.202193</td>
+      <td>1.199942</td>
+      <td>0.20000</td>
+      <td>0.2</td>
       <td>0.200000</td>
       <td>0.2</td>
-      <td>0.253731</td>
-      <td>0.2</td>
-      <td>0.212310</td>
+      <td>0.200000</td>
+      <td>0.200091</td>
+      <td>1.195675</td>
+      <td>0.214764</td>
+      <td>4.054481</td>
       <td>...</td>
-      <td>0.200000</td>
       <td>0.2</td>
-      <td>0.200000</td>
-      <td>16.2</td>
-      <td>8.195344</td>
-      <td>0.200000</td>
-      <td>0.200000</td>
-      <td>3.195597</td>
-      <td>0.200000</td>
-      <td>0.200000</td>
+      <td>0.201121</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>0.200543</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>0.266938</td>
+      <td>1.187261</td>
+      <td>1.187261</td>
     </tr>
     <tr>
       <th>1</th>
       <td>0.200000</td>
-      <td>0.206208</td>
-      <td>0.20000</td>
-      <td>2.195055</td>
-      <td>2.197807</td>
-      <td>0.201711</td>
+      <td>0.20412</td>
       <td>0.2</td>
-      <td>0.218632</td>
-      <td>0.2</td>
+      <td>1.200000</td>
+      <td>2.2</td>
       <td>0.200000</td>
+      <td>0.200000</td>
+      <td>0.206075</td>
+      <td>0.200000</td>
+      <td>1.338705</td>
       <td>...</td>
-      <td>0.200000</td>
+      <td>2.2</td>
+      <td>1.190041</td>
       <td>0.2</td>
-      <td>0.200000</td>
       <td>0.2</td>
-      <td>0.202020</td>
-      <td>0.200000</td>
-      <td>0.200000</td>
+      <td>8.199457</td>
+      <td>0.2</td>
+      <td>0.2</td>
       <td>0.200000</td>
       <td>0.200000</td>
       <td>0.200000</td>
@@ -1621,74 +1622,74 @@ document.write(`
     <tr>
       <th>2</th>
       <td>0.200000</td>
-      <td>0.200000</td>
       <td>0.20000</td>
-      <td>0.202970</td>
+      <td>0.2</td>
+      <td>1.186341</td>
+      <td>0.2</td>
       <td>0.200000</td>
-      <td>0.209987</td>
-      <td>0.2</td>
-      <td>3.184975</td>
-      <td>0.2</td>
-      <td>0.204844</td>
+      <td>3.094143</td>
+      <td>1.199999</td>
+      <td>0.200000</td>
+      <td>0.200000</td>
       <td>...</td>
-      <td>0.200000</td>
+      <td>0.2</td>
+      <td>0.205531</td>
+      <td>1.2</td>
       <td>0.2</td>
       <td>0.200000</td>
-      <td>0.2</td>
+      <td>3.2</td>
+      <td>4.2</td>
       <td>0.200000</td>
       <td>0.200000</td>
       <td>0.200000</td>
-      <td>0.204403</td>
-      <td>0.213989</td>
-      <td>0.213989</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>0.208873</td>
-      <td>0.200000</td>
-      <td>0.20038</td>
-      <td>0.200000</td>
-      <td>0.200000</td>
-      <td>1.188303</td>
-      <td>3.2</td>
-      <td>2.159671</td>
-      <td>0.2</td>
-      <td>1.638535</td>
-      <td>...</td>
-      <td>2.058844</td>
+      <td>0.200058</td>
+      <td>0.20000</td>
       <td>1.2</td>
-      <td>0.206827</td>
+      <td>0.200000</td>
+      <td>0.2</td>
+      <td>1.192485</td>
+      <td>0.305766</td>
+      <td>4.196733</td>
+      <td>1.185236</td>
+      <td>0.206457</td>
+      <td>...</td>
       <td>0.2</td>
       <td>0.200000</td>
-      <td>0.205461</td>
-      <td>0.205308</td>
+      <td>0.2</td>
+      <td>16.2</td>
       <td>0.200000</td>
-      <td>1.186011</td>
-      <td>1.186011</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>3.120988</td>
+      <td>0.200000</td>
+      <td>0.200000</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>1.191127</td>
-      <td>0.201290</td>
-      <td>0.20000</td>
-      <td>0.201975</td>
       <td>0.200000</td>
-      <td>0.200000</td>
+      <td>2.19588</td>
       <td>0.2</td>
-      <td>1.182990</td>
-      <td>1.2</td>
-      <td>3.744312</td>
+      <td>0.213659</td>
+      <td>0.2</td>
+      <td>0.207515</td>
+      <td>0.200000</td>
+      <td>0.201519</td>
+      <td>0.200000</td>
+      <td>0.200357</td>
       <td>...</td>
-      <td>0.341156</td>
       <td>0.2</td>
-      <td>1.193173</td>
+      <td>0.203306</td>
       <td>0.2</td>
-      <td>0.202636</td>
-      <td>3.194539</td>
-      <td>4.194692</td>
+      <td>0.2</td>
       <td>0.200000</td>
-      <td>0.200000</td>
-      <td>0.200000</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>0.212075</td>
+      <td>0.212739</td>
+      <td>0.212739</td>
     </tr>
   </tbody>
 </table>
@@ -1697,7 +1698,7 @@ document.write(`
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-64c6e5c0-d0f5-4114-9959-438f9527e3a2')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-d4af888f-9cbb-4016-aa37-9fd0814bef9e')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -1749,12 +1750,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-64c6e5c0-d0f5-4114-9959-438f9527e3a2 button.colab-df-convert');
+        document.querySelector('#df-d4af888f-9cbb-4016-aa37-9fd0814bef9e button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-64c6e5c0-d0f5-4114-9959-438f9527e3a2');
+        const element = document.querySelector('#df-d4af888f-9cbb-4016-aa37-9fd0814bef9e');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1799,7 +1800,7 @@ document.write(`
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-25f1a735-31db-4f10-9915-2af3bee32a61" class="colab-df-container">
+  <div id="df-210e8fae-2d66-4fb2-8b88-e3a3407ebbf3" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1832,12 +1833,12 @@ document.write(`
     <tr>
       <th>0</th>
       <td>sistem informasi akademik siakad sistem inform...</td>
-      <td>0.495093</td>
-      <td>0.414665</td>
       <td>0.001212</td>
-      <td>0.087817</td>
-      <td>0.001213</td>
-      <td>RPL</td>
+      <td>0.343867</td>
+      <td>0.001212</td>
+      <td>0.652496</td>
+      <td>0.001212</td>
+      <td>KOMPUTASI</td>
       <td>0</td>
     </tr>
     <tr>
@@ -1846,43 +1847,43 @@ document.write(`
       <td>0.000948</td>
       <td>0.000948</td>
       <td>0.000948</td>
-      <td>0.000948</td>
       <td>0.996208</td>
+      <td>0.000948</td>
       <td>RPL</td>
-      <td>1</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>2</th>
       <td>web server perangkat lunak server berfungsi me...</td>
+      <td>0.000913</td>
+      <td>0.000913</td>
+      <td>0.471043</td>
+      <td>0.526217</td>
       <td>0.000914</td>
-      <td>0.000913</td>
-      <td>0.996346</td>
-      <td>0.000913</td>
-      <td>0.000913</td>
-      <td>RPL</td>
-      <td>2</td>
+      <td>KOMPUTASI</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>3</th>
       <td>penjadwalan kuliah perguruan kompleks permasal...</td>
-      <td>0.994073</td>
       <td>0.001482</td>
+      <td>0.527094</td>
       <td>0.001482</td>
+      <td>0.468461</td>
       <td>0.001482</td>
-      <td>0.001482</td>
-      <td>RPL</td>
-      <td>0</td>
+      <td>KOMPUTASI</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>4</th>
       <td>seiring perkembangan teknologi didunia muncul ...</td>
       <td>0.001198</td>
-      <td>0.026960</td>
-      <td>0.674018</td>
       <td>0.001198</td>
-      <td>0.296627</td>
+      <td>0.001198</td>
+      <td>0.435443</td>
+      <td>0.560964</td>
       <td>KOMPUTASI</td>
-      <td>2</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>...</th>
@@ -1898,32 +1899,32 @@ document.write(`
     <tr>
       <th>823</th>
       <td>kurangnya pemahaman gejala penyakit saluran pe...</td>
+      <td>0.178813</td>
       <td>0.000823</td>
+      <td>0.122829</td>
       <td>0.000823</td>
-      <td>0.000823</td>
-      <td>0.235527</td>
-      <td>0.762003</td>
-      <td>KOMPUTASI</td>
+      <td>0.696712</td>
+      <td>RPL</td>
       <td>1</td>
     </tr>
     <tr>
       <th>824</th>
       <td>data set hilang utama studi bersifat substansi...</td>
-      <td>0.479937</td>
-      <td>0.001243</td>
-      <td>0.516335</td>
-      <td>0.001243</td>
       <td>0.001242</td>
-      <td>RPL</td>
+      <td>0.001242</td>
+      <td>0.001243</td>
+      <td>0.995030</td>
+      <td>0.001242</td>
+      <td>KOMPUTASI</td>
       <td>0</td>
     </tr>
     <tr>
       <th>825</th>
       <td>proses seleksi penerimaan tenaga kerja faktor ...</td>
+      <td>0.094836</td>
       <td>0.000635</td>
-      <td>0.000635</td>
-      <td>0.000635</td>
-      <td>0.997460</td>
+      <td>0.571704</td>
+      <td>0.332190</td>
       <td>0.000635</td>
       <td>RPL</td>
       <td>1</td>
@@ -1933,8 +1934,8 @@ document.write(`
       <td>sapi salah hewan ternak komoditi utama bahan p...</td>
       <td>0.000772</td>
       <td>0.000772</td>
-      <td>0.000772</td>
       <td>0.996911</td>
+      <td>0.000772</td>
       <td>0.000772</td>
       <td>RPL</td>
       <td>1</td>
@@ -1944,11 +1945,11 @@ document.write(`
       <td>sistem temu informasi alternatif metode simila...</td>
       <td>0.001105</td>
       <td>0.001105</td>
-      <td>0.001105</td>
-      <td>0.995579</td>
+      <td>0.251667</td>
+      <td>0.745017</td>
       <td>0.001105</td>
       <td>RPL</td>
-      <td>1</td>
+      <td>0</td>
     </tr>
   </tbody>
 </table>
@@ -1957,7 +1958,7 @@ document.write(`
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-25f1a735-31db-4f10-9915-2af3bee32a61')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-210e8fae-2d66-4fb2-8b88-e3a3407ebbf3')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -2009,12 +2010,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-25f1a735-31db-4f10-9915-2af3bee32a61 button.colab-df-convert');
+        document.querySelector('#df-210e8fae-2d66-4fb2-8b88-e3a3407ebbf3 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-25f1a735-31db-4f10-9915-2af3bee32a61');
+        const element = document.querySelector('#df-210e8fae-2d66-4fb2-8b88-e3a3407ebbf3');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -2080,18 +2081,18 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Akurasi: 96.99%
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Akurasi: 98.19%
 
 Laporan Klasifikasi:
                precision    recall  f1-score   support
 
-           0       0.98      0.98      0.98        42
-           1       0.98      0.96      0.97        68
-           2       0.95      0.98      0.96        56
+           0       1.00      0.98      0.99        48
+           1       0.96      1.00      0.98        67
+           2       1.00      0.96      0.98        51
 
-    accuracy                           0.97       166
-   macro avg       0.97      0.97      0.97       166
-weighted avg       0.97      0.97      0.97       166
+    accuracy                           0.98       166
+   macro avg       0.99      0.98      0.98       166
+weighted avg       0.98      0.98      0.98       166
 </pre></div>
 </div>
 </div>
@@ -2137,9 +2138,9 @@ weighted avg       0.97      0.97      0.97       166
 Laporan Klasifikasi:
                precision    recall  f1-score   support
 
-           0       0.98      1.00      0.99        42
-           1       0.99      0.99      0.99        68
-           2       0.98      0.96      0.97        56
+           0       1.00      1.00      1.00        48
+           1       0.98      0.97      0.98        67
+           2       0.96      0.98      0.97        51
 
     accuracy                           0.98       166
    macro avg       0.98      0.98      0.98       166
@@ -2189,9 +2190,9 @@ weighted avg       0.98      0.98      0.98       166
 Laporan Klasifikasi:
                precision    recall  f1-score   support
 
-           0       0.98      1.00      0.99        42
-           1       1.00      0.97      0.99        68
-           2       0.98      1.00      0.99        56
+           0       1.00      1.00      1.00        48
+           1       1.00      0.97      0.98        67
+           2       0.96      1.00      0.98        51
 
     accuracy                           0.99       166
    macro avg       0.99      0.99      0.99       166
