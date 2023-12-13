@@ -65,6 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = '200411100025_Tugas7';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="PROJEK UAS PPW PART 1" href="200411100025_UAS1.html" />
     <link rel="prev" title="Ringkasan Berita" href="200411100025_Tugas6_PPW%20A.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -175,6 +176,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="200411100025_Tugas5_PPW%20A.html"><strong>COSINUS SIMILARITY</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="200411100025_Tugas6_PPW%20A.html"><strong>Ringkasan Berita</strong></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>EKSTRAKSI KATA (PAGE RANK)</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="200411100025_UAS1.html"><strong>PROJEK UAS PPW PART 1</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="200411100025_UAS2.html"><strong>PROJEK UAS PPW PART 2</strong></a></li>
 </ul>
 
     </div>
@@ -472,7 +475,7 @@ dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-69d2a484-06ce-4831-a48e-c5c3c3aaa619" class="colab-df-container">
+  <div id="df-5bea8cf5-4cd2-431f-aff3-70d0fe3cafdf" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -582,7 +585,7 @@ dtype: int64
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-69d2a484-06ce-4831-a48e-c5c3c3aaa619')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-5bea8cf5-4cd2-431f-aff3-70d0fe3cafdf')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -634,12 +637,12 @@ dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-69d2a484-06ce-4831-a48e-c5c3c3aaa619 button.colab-df-convert');
+        document.querySelector('#df-5bea8cf5-4cd2-431f-aff3-70d0fe3cafdf button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-69d2a484-06ce-4831-a48e-c5c3c3aaa619');
+        const element = document.querySelector('#df-5bea8cf5-4cd2-431f-aff3-70d0fe3cafdf');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -784,30 +787,32 @@ dtype: int64
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    | Downloading package wordnet_ic to /root/nltk_data...
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    |   Unzipping corpora/wordnet_ic.zip.
+[nltk_data]    |   Unzipping corpora/wordnet_ic.zip.
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    | Downloading package words to /root/nltk_data...
 [nltk_data]    |   Unzipping corpora/words.zip.
-[nltk_data]    | Downloading package maxent_ne_chunker to
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    | Downloading package maxent_ne_chunker to
 [nltk_data]    |     /root/nltk_data...
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    |   Unzipping chunkers/maxent_ne_chunker.zip.
-[nltk_data]    | Downloading package punkt to /root/nltk_data...
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    |   Package punkt is already up-to-date!
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    | Downloading package punkt to /root/nltk_data...
+[nltk_data]    |   Package punkt is already up-to-date!
 [nltk_data]    | Downloading package snowball_data to
 [nltk_data]    |     /root/nltk_data...
-[nltk_data]    | Downloading package averaged_perceptron_tagger to
-[nltk_data]    |     /root/nltk_data...
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    |   Unzipping taggers/averaged_perceptron_tagger.zip.
-[nltk_data]    | 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    | Downloading package averaged_perceptron_tagger to
+[nltk_data]    |     /root/nltk_data...
+[nltk_data]    |   Unzipping taggers/averaged_perceptron_tagger.zip.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    | 
 [nltk_data]  Done downloading collection popular
 </pre></div>
 </div>
@@ -825,7 +830,7 @@ dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-fd371a4d-5c22-4bb9-ae66-c78fedf5eb86" class="colab-df-container">
+  <div id="df-70799c9b-c641-4dd8-81cc-68b387203513" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -880,7 +885,7 @@ dtype: int64
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-fd371a4d-5c22-4bb9-ae66-c78fedf5eb86')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-70799c9b-c641-4dd8-81cc-68b387203513')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -932,12 +937,12 @@ dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-fd371a4d-5c22-4bb9-ae66-c78fedf5eb86 button.colab-df-convert');
+        document.querySelector('#df-70799c9b-c641-4dd8-81cc-68b387203513 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-fd371a4d-5c22-4bb9-ae66-c78fedf5eb86');
+        const element = document.querySelector('#df-70799c9b-c641-4dd8-81cc-68b387203513');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1005,7 +1010,7 @@ dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-23e96f3c-28cd-46d4-9c4d-b06bd182556a" class="colab-df-container">
+  <div id="df-559077fe-40ab-43fe-9088-84f02981d228" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1078,7 +1083,7 @@ dtype: int64
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-23e96f3c-28cd-46d4-9c4d-b06bd182556a')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-559077fe-40ab-43fe-9088-84f02981d228')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -1130,12 +1135,12 @@ dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-23e96f3c-28cd-46d4-9c4d-b06bd182556a button.colab-df-convert');
+        document.querySelector('#df-559077fe-40ab-43fe-9088-84f02981d228 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-23e96f3c-28cd-46d4-9c4d-b06bd182556a');
+        const element = document.querySelector('#df-559077fe-40ab-43fe-9088-84f02981d228');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1193,7 +1198,7 @@ dtype: int64
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-6bb71a31-6626-47c6-a6df-baac9d054731" class="colab-df-container">
+  <div id="df-e10ec023-3954-47b1-a725-ecb37ad447bf" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1507,7 +1512,7 @@ dtype: int64
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-6bb71a31-6626-47c6-a6df-baac9d054731')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-e10ec023-3954-47b1-a725-ecb37ad447bf')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -1559,12 +1564,12 @@ dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-6bb71a31-6626-47c6-a6df-baac9d054731 button.colab-df-convert');
+        document.querySelector('#df-e10ec023-3954-47b1-a725-ecb37ad447bf button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-6bb71a31-6626-47c6-a6df-baac9d054731');
+        const element = document.querySelector('#df-e10ec023-3954-47b1-a725-ecb37ad447bf');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1618,7 +1623,7 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/da4eb5a7d701db59e52fb11ebf29ffd86d39bd3011731f4038eb41965703b672.png" src="_images/da4eb5a7d701db59e52fb11ebf29ffd86d39bd3011731f4038eb41965703b672.png" />
+<img alt="_images/178b2bd61390d76ff024cbb4ec5c8db6919fd8c1e209f921126b436ab7302d71.png" src="_images/178b2bd61390d76ff024cbb4ec5c8db6919fd8c1e209f921126b436ab7302d71.png" />
 </div>
 </div>
 </section>
@@ -1763,6 +1768,15 @@ Rank 5: sunat nilai Pagerank 0.13089106331208655
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title"><strong>Ringkasan Berita</strong></p>
       </div>
+    </a>
+    <a class="right-next"
+       href="200411100025_UAS1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>PROJEK UAS PPW PART 1</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
